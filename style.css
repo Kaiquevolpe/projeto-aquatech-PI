@@ -1,29 +1,73 @@
 body {
-    margin: 0;
+    margin: 0; /* tirar margem do bory*/
 }
 
 
+/* Cabeçario */
 
-.header{
+.header {
     background-color: black;
+    width: 100%;
+    height: 100px;
+    border-bottom: 4px solid #32b9cd; /* colocar borda em baixa do cabeçario (solid é o tipo)  */
 }
 
-.container {
+.header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
-    border: 1px solid pink;
     /* margin-left: 10%; */
-    /* margin-right: 10%; */
-     margin: 0 10% 0 10%; 
+    /* margin-right: 10%; mesmo comando debaixo */
+    margin: 0 10% 0;
+    height: 100%;
 }
 
 
-h1{
+.header .container h1 {
     color: #32b9cd;
     margin: 0;
 }
 
-ul{
-    color: rgb(255, 255, 0);
+.header .container .navbar {
+    color: #ff7700;
+    list-style: none; /*serve para tirar a bolinha dos intens da lista */
+}
+
+/* arrumar a lista do cabeçario */
+.header .container .navbar li {
+    display: inline; /*tirar a lista uma de cima da outra */
+    padding: 0 15px; /*distanciar os o sobre nos  */
+    }
+
+/* estilizar o botao sobre nos ... */
+.header .container .navbar li a {
+    color: #f76300;
+    text-decoration: none;
+    
+    }
+
+/* banner */
+
+.banner{
+    width: 100%;  /* definindo o tamanho que vai ficar*/
+    height: 400px; /* definindo o tamanho que vai ficar*/
+    background-image: url(Imagens/bg-jelly-fish-para_outras_pags.png);  /* colocando imagem*/
+}
+
+.banner .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%; 
+    display: flex;  /*deixa fazer as mudanças, sem ele não vai*/
+    justify-content: center;   /* centralizando o texto para os lados*/
+    align-items: center; /* centralizando o texto sentido baixo*/
+}
+
+.banner .container p {
+    margin: 0; 
+    color:white;
+    font-size: 32px;  /* tamanho do texto*/
+    width: 10%;  /* especificar tamanho do texto*/
+
 }
